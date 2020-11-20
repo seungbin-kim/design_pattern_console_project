@@ -2,9 +2,9 @@ package com.wisoft.managementsystem.menu;
 
 import com.wisoft.managementsystem.MainApplication;
 import com.wisoft.managementsystem.dto.UserDTO;
-import com.wisoft.managementsystem.controller.AdminInvocationHandler;
-import com.wisoft.managementsystem.controller.ManagementService;
-import com.wisoft.managementsystem.controller.ManagementSystem;
+import com.wisoft.managementsystem.service.AdminInvocationHandler;
+import com.wisoft.managementsystem.service.ManagementService;
+import com.wisoft.managementsystem.service.ManagementSystem;
 
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
@@ -137,7 +137,7 @@ public class AdminMenu implements MenuStrategy {
       String title = dto.getTitle();
       System.out.println("ㅣ" + no + "ㅣ" + id + "ㅣ" + pw + "ㅣ" + name + "ㅣ" + title + "ㅣ");
     }
-//    System.out.println(managementService.giveGrade(new Course())); // 보호프록시 테스트
+//    System.out.println(managementService.giveGrade(new CourseDTO())); // 보호프록시 테스트
   }
 
   private ManagementService getAdminProxy(ManagementService managementService) {

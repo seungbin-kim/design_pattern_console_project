@@ -4,9 +4,9 @@ import com.wisoft.managementsystem.MainApplication;
 import com.wisoft.managementsystem.dto.CourseDTO;
 import com.wisoft.managementsystem.dto.SubjectDTO;
 import com.wisoft.managementsystem.dto.UserDTO;
-import com.wisoft.managementsystem.controller.ManagementService;
-import com.wisoft.managementsystem.controller.ManagementSystem;
-import com.wisoft.managementsystem.controller.StudentInvocationHandler;
+import com.wisoft.managementsystem.service.ManagementService;
+import com.wisoft.managementsystem.service.ManagementSystem;
+import com.wisoft.managementsystem.service.StudentInvocationHandler;
 
 import java.lang.reflect.Proxy;
 import java.util.ArrayList;
@@ -150,7 +150,7 @@ public class StudentMenu implements MenuStrategy {
       String pname = dto.getPname();
       System.out.println(sno + " ㅣ " + sname + " ㅣ " + pname);
     }
-//    System.out.println(managementService.giveGrade(new Course())); // 보호프록시 테스트
+//    System.out.println(managementService.giveGrade(new CourseDTO())); // 보호프록시 테스트
   }
 
   private ManagementService getStudentProxy(ManagementService managementService) {
