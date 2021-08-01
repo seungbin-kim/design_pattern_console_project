@@ -56,7 +56,7 @@ public abstract class DAOTemplate<T> {
   }
 
   private Connection connDB() {
-    String url = "jdbc:postgresql://localhost:5432/scott";
+    String url = "jdbc:postgresql://localhost:25432/scott"; // 원래포트는 5432
     String user = "scott";
     String pwd = "tiger";
 

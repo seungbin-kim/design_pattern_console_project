@@ -1,6 +1,5 @@
 package com.wisoft.managementsystem.controller;
 
-import com.wisoft.managementsystem.data.dto.*;
 import com.wisoft.managementsystem.dto.CourseDTO;
 import com.wisoft.managementsystem.dto.EnrolledStudentDTO;
 import com.wisoft.managementsystem.dto.SubjectDTO;
