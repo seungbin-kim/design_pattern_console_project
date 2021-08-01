@@ -14,8 +14,8 @@ public class MainApplication {
   static private boolean exitFlag = false;
 
   public static void main(String... args) {
+    LoginMenu loginMenu = new LoginMenu();
     do {
-      LoginMenu loginMenu = new LoginMenu();
       loginMenu.login();
       menuStrategy.display();
     } while (!exitFlag);

@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public interface MenuStrategy {
 
-  Scanner scanner = MainApplication.getScanner();
+    Scanner scanner = MainApplication.getScanner();
 
-  void display();
+    void display();
 
-  default void lineEnter(int n) {
-    for (int i = 0; i < n; i++) {
-      System.out.println();
+    default void lineEnter(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.println();
+        }
     }
-  }
 
 }
